@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="css/survey.css">
+</head>
+<body>
+    <h1>Survey Form</h1>
+    <form action="URL where you want your data to go" method="post">
+        <fieldset>
+            <legend>Your Information</legend>
+            <div>
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Your First Name" />
+            </div>
+            <div>
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Your Last Name" />
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email Address" />
+            </div>
+            <div>
+                <label for="">Gender:</label>
+                <input type="radio" id="woman" name="gender" value="woman">
+                <label for="woman">Woman</label>
+                <input type="radio"  id="man" name="gender" value="man">
+                <label for="man">Man</label>
+                <input type="radio" id="nonbinary" name="gender" value="nonbinary">
+                <label for="nonbinary">Nonbinary</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </div>
+            <div>
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age">
+            </div>
+            <div>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob">
+            </div>
+            <div>
+                <label for="color">Favorite Color:</label>
+                <input type="color" id="color" name="color">
+            </div>
+            <div>
+                <label for="country">Country:</label>
+                <select name="country" id="country">
+                    <option value="">Choose a country</option>
+                    <option value="brazil">Brazil</option>
+                    <option value="france">France</option>
+                    <option value="japan">Japan</option>
+                    <option value="libya">Libya</option>
+                    <option value="usa">U.S.A.</option>
+                </select>
+            </div>
+            <div>
+                <label for="salary">Salary:</label>
+                <span class="range-caption">Poor</span>
+                <input type="range" id=”salary” name=“salary” min="0" max="100" value="50">
+                <span class="range-caption">Rich</span>
+            </div>
+            <div>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            <div>
+                <label for="address">Address:</label>
+                <textarea name="address" id="address" cols="40"></textarea>
+            </div>
+            <div>
+                <label for="">Contact method(s):</label>
+                <input type="checkbox"  name="contact" id="emailCheckbox" value="email">
+                <label for="emailCheckbox">Email</label>
+                <input type="checkbox" name="contact" id="phoneCheckbox" value="phone">
+                <label for="phoneCheckbox">Phone</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Survey Questions</legend>
+            <div>
+                Favorite Sport:
+                <input type="radio" id="baseball" name="sport" value="baseball"/>
+                <label for="baseball">Baseball</label>
+                <input type="radio" name="sport" value="rugby" /> Rugby
+                <input type="radio" name="sport" value="snowboarding" /> Snowboarding
+            </div>
+            <div>
+                Your Pets:
+                <input type="checkbox" name="pets" value="cat" /> Cat
+                <input type="checkbox" name="pets" value="dog" /> Dog
+                <input type="checkbox" name="pets" value="iguana" /> Iguana
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
